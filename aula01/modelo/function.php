@@ -12,13 +12,13 @@
     }else{
         switch ($ANIMAL) {
             case '1': $dados= array(
-                "tipo" => 'cachorro',
+                "tipo" => 'cachorro.jpg',
                 "mensagem" => 'Seja bem vindo' .$NOME. ', sabemos que você gosta de cachorrinhos' 
 
             );
                 break;
                 case '2': $dados= array(
-                    "tipo" => 'cachorro',
+                    "tipo" => 'gatos.jpg',
                     "mensagem" => 'Seja bem vindo' .$NOME. ', sabemos que você gosta de gatinhos' 
     
                 );
