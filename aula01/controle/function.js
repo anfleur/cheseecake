@@ -4,12 +4,19 @@ $(document).ready(function(){
 
         e.preventDefault()
         
-        alert('Você clicou no botão enviar')
 
         //Coletar o que foi escrito e seecionado em nosso formulário
         let dados = $('#form').serialize()
 
-        console.log(dados)
+        $.ajax({
+            type: 'POST',
+            dataType: 'JSON',
+            assync: true,
+            data: dados,
+            url: '../modelo/fuction.php',
+            success: function(){
+            }
+        })
 
     })
 })
