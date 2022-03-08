@@ -13,19 +13,19 @@
         switch ($ANIMAL) {
             case '1': $dados= array(
                 "tipo" => 'cachorro.jpg',
-                "mensagem" => 'Seja bem vindo' .$NOME. ', sabemos que você gosta de cachorrinhos' 
+                "mensagem" => 'Seja bem vindo ' .$NOME. ', sabemos que você gosta de cachorrinhos' 
 
             );
                 break;
                 case '2': $dados= array(
-                    "tipo" => 'gatos.jpg',
-                    "mensagem" => 'Seja bem vindo' .$NOME. ', sabemos que você gosta de gatinhos' 
+                    "tipo" => 'gato.jpg',
+                    "mensagem" => 'Seja bem vindo ' .$NOME. ', sabemos que você gosta de gatinhos' 
     
                 );
                     break;
                     case '3': $dados= array(
-                        "tipo" => 'cachorro',
-                        "mensagem" => 'Seja bem vindo' .$NOME. ', sabemos que você gosta de coelhinhos' 
+                        "tipo" => 'coelho.jpg',
+                        "mensagem" => 'Seja bem vindo ' .$NOME. ', sabemos que você gosta de coelhinhos' 
         
                     );
                         break;

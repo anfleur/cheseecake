@@ -8,7 +8,7 @@ $(document).ready(function(){
         //Coletar o que foi escrito e seecionado em nosso formulário
         let dados = $('#form').serialize()
 
-        $('#retorno').empty()
+        $('#function').empty()
 
         $.ajax({
             type: 'POST',
@@ -17,11 +17,11 @@ $(document).ready(function(){
             data: dados,
             url: '../modelo/function.php',
             success: function(dados){
-            $('#retorno').append(`
+            $('#function').append(`
             <div class="col-12 col-sm-8 col-md-6">
                 <div class="alert-primary">
                     <h1 class="text-center text-dark">
-                        ${dados.mensagens}
+                        ${dados.mensagem}
                     </h1>
                 </div>
                 <img src="../../img/${dados.tipo}" class="img-fluid">
