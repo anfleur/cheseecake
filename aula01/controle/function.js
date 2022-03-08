@@ -13,7 +13,7 @@ $(document).ready(function(){
             dataType: 'JSON',
             assync: true,
             data: dados,
-            url: '../modelo/fuction.php',
+            url: '../modelo/function.php',
             success: function(){
             }
         })
