@@ -13,15 +13,16 @@ if (empty($nome)) {
     );
 } else {
 
-    if ($idade->format('%y') >= 18) {
-        $dados = array(
-            "mensagemAlerta" => 'alert-primary',
-            "mensagem" => 'Valeu por preencher o formulário ' . $nome . ', agora sabemos que você gosta de ' . $bebida . '! („• ᴗ •„)'
-        );
-    } else {
+    if ($idade->format('%y') <= 18) {
         $dados = array(
             "mensagemAlerta" => 'alert-danger',
             "mensagem" =>  'Que mané ' . $bebida . ' ' . $nome . '!' . ' Você é de menor ヽ(`⌒´メ)ノ'
+            
+        );
+    } else {
+        $dados = array(
+            "mensagemAlerta" => 'alert-primary',
+            "mensagem" => 'Valeu por preencher o formulário ' . $nome . ', agora sabemos que você gosta de ' . $bebida . '! („• ᴗ •„)'
         );
     }
 
