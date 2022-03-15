@@ -15,12 +15,12 @@ $(document).ready(function () {
             dataType: "JSON",
             assync: true,
             data: dados,
-            url: "../model/return.php",
+            url: "../modelo/return.php",
             success: function (dados) {
                 $('#retorno').append(`
                     <div id="retorno" class="row justify-content-center">
                         <div class="col-13 col-sm-8 col-md-6">
-                            <div class="${dados.B4}">
+                            <div class="${dados.mensagemAlerta}">
                                 <h1 class="text-center text-dark">
                                     ${dados.mensagem}
                                 </h1>
