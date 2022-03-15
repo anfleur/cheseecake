@@ -1,30 +1,30 @@
 <?php
 
-$NOME = $_REQUEST['NOME'];
-$BEBIDA = $_REQUEST['BEBIDA'];
-$NASC = $_REQUEST['ANO'];
+$nome = $_REQUEST['nome'];
+$bebida = $_REQUEST['bebida'];
+$ano_nascimento = $_REQUEST['ano_nascimento'];
 $DataAtual = date("Y-m-d");
-$IDADE = date_diff(date_create($NASC), date_create($DataAtual));
+$idade = date_diff(date_create($ano_nascimento), date_create($DataAtual));
 
 
 //echo 'Idade é '.$IDADE->format('%y');
 //echo $DataAtual;
 
-if (empty($NOME)) {
+if (empty($nome)) {
     $dados = array(
         "mensagem" => 'Existe(m) campo(s) a ser(em) preenchido(s).'
     );
 } else {
 
-    if ($IDADE->format('%y') >= 18) {
+    if ($idade->format('%y') >= 18) {
         $dados = array(
             "B4" => 'alert-success',
-            "mensagem" => 'Olá' . $NOME . ', A sua bebida favorita é: ' . $BEBIDA
+            "mensagem" => 'Olá' . $nome . ', A sua bebida favorita é: ' . $bebida
         );
     } else {
         $dados = array(
             "B4" => 'alert-danger',
-            "mensagem" => 'Você é menor de idade! ' . $NOME . ', não pode beber'
+            "mensagem" => 'Você é menor de idade! ' . $nome . ', não pode beber'
         );
     }
 
